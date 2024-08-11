@@ -3,25 +3,25 @@
     {
       "title": "Food app(ReactJs Ongoin)",
       "description": "This is a food delivery app built in ReacJs. Which have a responsive card summary of products.",
-      "image":"https://iili.io/dljkdDF.png",
+      "image":"https://iili.io/d0RkrrX.png",
       "link": "https://github.com/abhisheksinghmahara/FoodApp.git"
     },
     {
     "title": "Weather Forecast",
     "description": "This project is to showcase the weather update. It consists of Html, Css and JavaScript. Here the data is fetched from an api which show data depending upon the location of user. The location is been traced using longitude and latitude of user's location.",
-    "image": "https://iili.io/dljCuCN.png",
+    "image": "https://iili.io/d0RkZhl.png",
     "link": "https://github.com/abhisheksinghmahara/WeatherApp.git"
   },
     {
       "title": "Quiz(Javascript)",
       "description": "This project is a quiz app built in html, css and javascript with some of hard coded data, which are basically question and respective answers. Where you are allowed to select answer once and then all the other options get disabled. But you can try to score better by trying second time.",
-      "image": "https://iili.io/dljCzjR.png",
+      "image": "https://iili.io/d0Rkw7a.png",
       "link": "https://github.com/abhisheksinghmahara/QuizApp.git"
     },
     {
       "title": "Calculator(Javascript)",
       "description": "It is built in Html, Css and Javascript inside it. It has a attractive ui with 2 result containers. Where one of them show the results up to the last calculation and another is to show the latest inputs being taken.",
-      "image": "https://iili.io/dlhQ9PS.png",
+      "image": "https://iili.io/d0RkNkJ.png",
       "link": "https://github.com/abhisheksinghmahara/Calculator.git"
     }
   ]
