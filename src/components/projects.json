@@ -1,27 +1,40 @@
 
 [
+
     {
-      "title": "Food app(ReactJs Ongoin)",
-      "description": "This is a food delivery app built in ReacJs. Which have a responsive card summary of products.",
-      "image":"https://iili.io/d0RkrrX.png",
+      "title": "Property Rental Web-app",
+      "description": "A full-stack MERN application for property rentals, enabling users to browse, book, and manage properties with secure authentication and a seamless user experience.",
+      "image":"https://iili.io/dkJ9BIV.png",
+      "link": "https://github.com/abhisheksinghmahara/totality-frontend-challenge.git"
+    },
+    {
+      "title": "Weather Forecast",
+      "description": "This project is to showcase the realtime weather update. Here the data is fetched from an api which show data depending upon the location of user. The location is been traced using longitude and latitude of user's location.",
+      "image": "https://iili.io/dkq3TPa.png",
+      "link": "https://github.com/abhisheksinghmahara/WeatherApp.git"
+    },
+    {
+      "title": "Employee Data",
+      "description": "An employee data management system with a tabular display, utilizing browser local storage. Features include image upload, detailed employee records, and a debounced search bar for efficient name and post filtering.",
+      "image": "https://iili.io/dkIB9e9.png",
+      "link": "https://github.com/abhisheksinghmahara/WeatherApp.git"
+    },
+    {
+      "title": "Food Delivery",
+      "description": "A responsive food delivery app built with React.js, featuring dynamic product card summaries for an intuitive user experience.",
+      "image":"https://iili.io/dkq3nwP.png",
       "link": "https://github.com/abhisheksinghmahara/FoodApp.git"
     },
     {
-    "title": "Weather Forecast",
-    "description": "This project is to showcase the weather update. It consists of Html, Css and JavaScript. Here the data is fetched from an api which show data depending upon the location of user. The location is been traced using longitude and latitude of user's location.",
-    "image": "https://iili.io/d0RkZhl.png",
-    "link": "https://github.com/abhisheksinghmahara/WeatherApp.git"
-  },
-    {
-      "title": "Quiz(Javascript)",
-      "description": "This project is a quiz app built in html, css and javascript with some of hard coded data, which are basically question and respective answers. Where you are allowed to select answer once and then all the other options get disabled. But you can try to score better by trying second time.",
-      "image": "https://iili.io/d0Rkw7a.png",
+      "title": "Quiz App",
+      "description": "This JavaScript-based quiz app is built with HTML, CSS, and JavaScript. It features hardcoded questions and answers, allowing users to select an answer once, after which other options are disabled. Users can retry the quiz to improve their score.",
+      "image": "https://iili.io/dkq3CAB.png",
       "link": "https://github.com/abhisheksinghmahara/QuizApp.git"
     },
     {
-      "title": "Calculator(Javascript)",
-      "description": "It is built in Html, Css and Javascript inside it. It has a attractive ui with 2 result containers. Where one of them show the results up to the last calculation and another is to show the latest inputs being taken.",
-      "image": "https://iili.io/d0RkNkJ.png",
+      "title": "Simple Calculator",
+      "description": "This project features a dynamic HTML, CSS, and JavaScript interface with an attractive UI. It includes two result containers: one displaying cumulative calculations and another showcasing the latest input values.",
+      "image": "https://iili.io/dkq3ot1.png",
       "link": "https://github.com/abhisheksinghmahara/Calculator.git"
     }
   ]

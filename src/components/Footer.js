@@ -1,7 +1,8 @@
 import React from 'react';
+
 const Footer = () => {
   return (
-    <footer className="bg-primary-color text-white py-6 bg-blue-500..." >
+    <footer style={{"border-radius":"50px 50px 0px 0px"}} className="bg-black text-white py-6">
       <div className="container mx-auto text-center">
         <p>&copy; {new Date().getFullYear()} My Portfolio. All rights reserved.</p>
       </div>
