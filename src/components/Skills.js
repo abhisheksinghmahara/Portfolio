@@ -3,7 +3,7 @@ const About = () => {
   return (
     <section id="about" className="py-2 bg-stone-200 text-primary-color">
       <div className="container mx-auto">
-      <h2 style={{ "font-family": "Baskervville SC, system-ui" }} className="text-3xl text-gray-500 font-bold mb-4">Technical Skills</h2>
+      <h2 style={{ "fontFamily": "Baskervville SC, system-ui" }} className="text-3xl text-gray-500 font-bold mb-4">Technical Skills</h2>
         <div className="flex flex-wrap justify-center text-bolder p-4">
           <div className="flex-1 min-w-[250px] m-2 bg-blue-200 p-4 text-gray text-center">
             HTML
@@ -31,7 +31,7 @@ const About = () => {
           </div>
         </div>
         
-      <h2  style={{ "font-family": "Baskervville SC, system-ui" }}className="text-3xl font-bolder text-gray-500 mb-4">Soft Skills</h2>
+      <h2  style={{ "fontFamily": "Baskervville SC, system-ui" }}className="text-3xl font-bolder text-gray-500 mb-4">Soft Skills</h2>
         <div className="flex flex-wrap justify-center p-4">
 
           <div className="flex-1 break-words min-w-[250px] m-2 bg-blue-200 p-4 text-gray text-center">
