@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 function Navbar() {
   const [openNav, setOpenNav] = useState(false);
+  const location = useLocation();
 
   // Close the mobile menu on window resize
   useEffect(() => {
@@ -18,54 +19,33 @@ function Navbar() {
 
   // Navigation Links
   const navLinks = (
-    <ul  className="mt-1 mb-1 pl-4 text-xl flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      <li>
-        <Link
-          to="/"
-          className="flex items-center gap-x-2 p-1 font-medium  text-blue-gray-700 italic"
-        >
-          Home
-        </Link>
-      </li>
-      <li>
-        <Link
-          to="/projects"
-          className="flex items-center gap-x-2 p-1 font-medium text-blue-gray-700 italic"
-        >
-          Projects
-        </Link>
-      </li>
-      <li>
-        <Link
-          to="/skills"
-          className="flex items-center gap-x-2 p-1 font-medium  text-blue-gray-700 italic"
-        >
-          Skills
-        </Link>
-      </li>
-      <li>
-        <Link
-          to="/contacts"
-          className="flex items-center gap-x-2 p-1 font-medium text-blue-gray-700 italic"
-        >
-          Contact
-        </Link>
-      </li>
-      {/* <li>
-        <Link
-          to="/certifications"
-          className="flex items-center gap-x-2 p-1 font-medium text-blue-gray-700 italic"
-        >
-          Certification
-        </Link>
-      </li> */}
+    <ul className="mt-1 mb-1 pl-4 text-xl flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+      {['/', '/projects', '/skills', '/contacts'].map((path, index) => (
+        <li key={index}>
+          <Link
+            to={path}
+            className={`flex items-center gap-x-2 p-1 font-medium text-blue-gray-700 italic ${
+              location.pathname === path || (path === '/' && location.pathname === '/home')
+                ? 'font-bold text-blue-600'
+                : ''
+            }`}
+          >
+            {path === '/' ? 'Home' : path.slice(1).charAt(0).toUpperCase() + path.slice(2)}
+          </Link>
+        </li>
+      ))}
     </ul>
   );
+  
 
   return (
-    <nav style={{"border-radius":"0px 0px 20px 20px"}} className="bg-white">
-      <div className="container mx-auto flex items-center justify-between  gap-2 p-1">
-        <Link to="/" style={{"font-family": "Protest Guerrilla, sans-serif"}} className="text-5xl m-3 font-bold text-blue-gray-900">
+    <nav style={{ borderRadius: "0px 0px 20px 20px" }} className="bg-white">
+      <div className="container mx-auto flex items-center justify-between gap-2 p-1">
+        <Link
+          to="/"
+          style={{ fontFamily: "Protest Guerrilla, sans-serif" }}
+          className="text-5xl m-3 font-bold text-blue-gray-900"
+        >
           Abhishek Mahara
         </Link>
         <div className="hidden px-5 lg:block">{navLinks}</div>
@@ -73,6 +53,7 @@ function Navbar() {
         <button
           className="ml-auto lg:hidden"
           onClick={() => setOpenNav(!openNav)}
+          aria-label="Toggle navigation"
         >
           {openNav ? (
             <svg
@@ -83,11 +64,7 @@ function Navbar() {
               stroke="currentColor"
               strokeWidth={2}
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           ) : (
             <svg
@@ -104,12 +81,12 @@ function Navbar() {
         </button>
       </div>
       {openNav && (
-        <div className="lg:hidden bg-blue-50 hover">
+        <div className="lg:hidden bg-blue-50">
           {navLinks}
-         
         </div>
       )}
     </nav>
   );
 }
-export default Navbar
+
+export default Navbar;

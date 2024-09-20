@@ -5,7 +5,7 @@ const Contacts=()=>{
 return (
 <div className="container flex self-center flex-wrap flex-col  justify-center ">
       <div className="flex-1 min-w-[200px] m-2 p-4 text-white text-center">
-      <h1 style={{ "font-family": "Baskervville SC, system-ui" }}  className="mb-4 text-3xl font-bold leading  text-center tracking-tight  px-2 text-gray-500   ">
+      <h1 style={{ "fontFamily": "Baskervville SC, system-ui" }}  className="mb-4 text-3xl font-bold leading  text-center tracking-tight  px-2 text-gray-500   ">
         Let's connect
           </h1>
       </div>
@@ -25,7 +25,7 @@ return (
       <a href="https://www.linkedin.com/in/webdev-abhishek-mahara">
           
           <h2 className="flex-1 break-all items-center text-xl font-sans  font-bold text-blue-900">
-          Linked<span  style={{"border-radius":"2px"}}  className="text-white bg-blue-900">in</span>: <span   className="text-blue-500 hover:font-mono ">www.linkedin.com/in/webdev-abhishek-mahara</span>
+          Linked<span  style={{"borderRadius":"2px"}}  className="text-white bg-blue-900">in</span>: <span   className="text-blue-500 hover:font-mono ">www.linkedin.com/in/webdev-abhishek-mahara</span>
           </h2>
         </a>
       </div>
