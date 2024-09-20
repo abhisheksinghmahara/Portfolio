@@ -35,7 +35,7 @@ const Home = () => {
       </div>
       <div className="flex-1 bg-blue-100">
         <p
-          className="break-words text-2xl m-3  pt-20"
+          className="break-words text-2xl m-3  pt-32"
           style={{ "fontFamily": "Rajdhani, system-ui" }}
         >
          I hold a Bachelor of Technology degree and have a strong foundation in frontend development. Previously, I interned as a Full Stack Web Developer, where I gained hands-on experience in building dynamic web applications. I am passionate about transforming ideas into beautiful, functional websites. My journey in web development began with a curiosity for coding, which quickly evolved into a love for creating engaging and intuitive user interfaces.

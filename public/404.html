@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page Not Found</title>
     <script type="text/javascript">
-        // Redirect to the landing page of the portfolio
-        window.location.href = "/portfolio/";
+      var pathname = window.location.pathname;
+      // Check if the pathname contains '/portfolio/'
+      if (pathname.startsWith("/portfolio/")) {
+        // Redirect to the same route but under "/portfolio"
+        window.location.href = "/portfolio" + window.location.search + window.location.hash;
+      } else {
+        // For any other path, redirect to the root portfolio path
+        window.location.href = "/portfolio";
+      }
     </script>
-</head>
-<body>
-    <h1>Page Not Found</h1>
-    <p>Redirecting to the home page...</p>
-</body>
+  </head>
+  <body>
+    <h1>404 - Page Not Found</h1>
+    <p>Redirecting to the correct page...</p>
+  </body>
 </html>
